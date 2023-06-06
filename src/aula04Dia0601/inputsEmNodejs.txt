@@ -1,0 +1,1 @@
+Gostei de fazer a leitura de inputs no Node.js usando o readline-sync.
