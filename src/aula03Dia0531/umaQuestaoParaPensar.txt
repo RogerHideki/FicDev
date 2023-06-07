@@ -1,0 +1,8 @@
+1-) O que é um Palíndromo?
+
+Um Palíndromo é uma série de elementos que se pode ler, indiferentemente, da direita para esquerda ou vice-versa.
+
+
+2-) Como podemos fazer para verificar se uma determinada palavra é um palíndromo?
+
+Podemos verificar se o primeiro elemento é igual ao último elemento, se o segundo elemento é igual ao penúltimo elemento e assim por diante até chegar ao(s) elemento(s) situado(s) no centro da palavra.
