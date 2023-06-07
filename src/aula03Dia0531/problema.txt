@@ -1,0 +1,1 @@
+O problema do código está na linha 2, pois a expressão "numero + 10" é interpretada como uma concatenação e não como uma soma entre dois números.
