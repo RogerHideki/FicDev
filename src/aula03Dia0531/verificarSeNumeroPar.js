@@ -1,9 +1,3 @@
-// Verifique se o número é par ou ímpar.
-// Exiba uma mensagem adequada ao resultado
-// Utilizando operadores de comparação.
-
 let numero = prompt('Digite um número inteiro:');
-
-if () console.log();
-else console.log();
-
+if (numero % 2 == 0) console.log('O número é par');
+else console.log('O número é ímpar');
