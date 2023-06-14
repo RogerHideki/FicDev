@@ -1,0 +1,1 @@
+O Sequelize consegue operar com Postgres, com MySQL, com MariaDB, com SQLite, com Microsoft SQL Server, com Oracle Database, com Amazon Redshift e com Snowflake’s Data Cloud.
