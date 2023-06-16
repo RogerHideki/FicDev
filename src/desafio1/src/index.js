@@ -36,7 +36,19 @@ if (opcao == 1) {
                     let uf = readline.question('Digite a Unidade da Federação da nutricionista: ');
                     valido(3, uf)
                         .then(() => {
-                            //insert
+                            (async () => {
+                                const Sequelize = require('sequelize');
+                                const Op = Sequelize.Op;
+                                const database = require('./database/config/db');
+                                const DadosDeNutricionistas = require('./database/models/dadosdenutricionistas');
+                                await database.sync();
+
+                                const dadosDeNutricionistas = await DadosDeNutricionistas.create({
+                                    nome: `${nome}`,
+                                    crn: `${crn}`,
+                                    uf: `${uf}`
+                                })
+                            })();
                         })
                         .catch(e => console.error(e.message))
                 })
