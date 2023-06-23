@@ -13,7 +13,7 @@ class TarefaModel extends Model {
     }
 
     static associate(models) {
-        this.belongsTo(models.User, { foreignKey: 'userid_owner' });
+        this.belongsTo(models.User, { foreignKey: 'user_owner' });
         this.hasMany(models.TarefaUser, { foreignKey: 'tarefaid' });
         this.hasOne(models.TarefaEspecificacao, { foreignKey: 'tarefaid' });
     }

@@ -8,12 +8,14 @@ class UserModel extends Model {
         }, {
             tableName: 'user',
             modelName: 'User',
+            timestamps: true,
+            createdAt: true,
             sequelize: database
         });
     }
 
     static associate(models) {
-        this.hasMany(models.Tarefa, { foreignKey: 'userid_owner' });
+        this.hasMany(models.Tarefa, { foreignKey: 'user_owner' });
         this.hasMany(models.TarefaUser, { foreignKey: 'userid' });
     }
 }
