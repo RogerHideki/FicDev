@@ -1,0 +1,22 @@
+npm init -y
+npm install express
+npm install sequelize sequelize-cli pg pg-hstore
+sudo npm install -g nodemon
+npm i bcrypt
+npm i jsonwebtoken
+
+
+environments.js
+.sequelizerc
+
+npx sequelize-cli init
+
+deletar algumas pastas/arquivos
+
+config.js
+
+npx sequelize db:create
+
+sequelize migration:generate --name create_clientes
+
+npx sequelize-cli db:migrate
